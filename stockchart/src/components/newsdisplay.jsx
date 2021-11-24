@@ -42,8 +42,8 @@ class NewsPage extends React.Component {
           }}
         >
           <Card href = {articleList[j]["url"]} className= "text-wrap" style = {{textDecoration : "none"}}>
-            <Image src={ articleList[j]["image"].length ? articleList[j]["image"] : "https://media.istockphoto.com/vectors/newspaper-cover-page-vector-id187925868?k=20&m=187925868&s=612x612&w=0&h=xn8eHpzq2KMomzY5YROMoKSZKxcYWNjGZOw25cUV28Y="} wrapped ui = {false} fluid />
-            <Card.Content>
+            <Image src={ articleList[j]["image"].length ? articleList[j]["image"] : "https://media.istockphoto.com/vectors/newspaper-cover-page-vector-id187925868?k=20&m=187925868&s=612x612&w=0&h=xn8eHpzq2KMomzY5YROMoKSZKxcYWNjGZOw25cUV28Y="} ui = {false} style = {{height :  "200px"}}/>
+            <Card.Content style = {{height : "246px"}}>
               <Card.Header>
                 <Header as="h5">
                   {articleList[j]["source"] + ": " + articleList[j]["headline"]}
